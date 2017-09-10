@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>63669</title>
+<!-- SET: FAVICON -->
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<!-- END: FAVICON -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- SET: STYLESHEET -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+<!-- END: STYLESHEET -->
+
+<!-- SET: IE SCRIPTS -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!-- END: IE SCRIPTS -->
+<body class="body">
+<!-- wrapper starts -->
+<div class="wrapper">
+  <!-- Open Scren starts -->
+  <div class="openscreen">
+    <header>
+      <ul>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+      </ul>
+      <div class="clearfix"></div>
+      <a href="#"><img src="images/logo.png" alt="logo"></a> 
+        <img class="mobile_hide" src="images/open-screen-img.png" alt="img">
+        <img class="mobile_show" src="images/loginpage-mobile-img.png" alt="img">
+      <h1>Voice conferencing app in real time.</h1>
+      <p>Streamlined user experience <br>
+        without complications.</p>
+      <div class="log_block">
+        <input type="text" class="login" value="Login" readonly>
+        <div class="register" id="register">
+          <input type="text" class="register active" value="Create Account" readonly>
+        </div>
+      </div>
+    </header>    
+  <!-- Open Scren ends -->
+  <!-- Open Scren Register Form starts -->
+  <div class="open_create" id="create_form">
+    	<a href="#"><img src="images/logo.png" alt="logo"></a> 
+        <img src="images/login-screen-img1.jpg" alt="img">
+        <ul>
+            <li><input type="text" placeholder="Username"></li>
+            <li><input type="text" placeholder="Password"></li>
+            <li><input type="text" placeholder="Email"></li>
+      </ul>
+      <p>By clicking <a href="#" style="text-decoration:none;">‘Create’</a> you accept our<a href="#">Terms &amp; Conditions</a>.</p>
+       <div class="create"> <input type="text" class="active" value="Create" readonly></div>
+    </div>
+  <!-- Open Scren Register Form Ends -->
+  
+  <!-- Open Scren Login Form starts -->
+  <div class="open_create open_login" id="login_form">
+  	<a href="#">Forgot Password?</a>
+    <form action="popup1.html">
+        <ul>
+            <li><input type="text" placeholder="Username"></li>
+            <li><input type="text" placeholder="Password"></li>
+      </ul>
+       <div class="create" style="border:none;"> 
+      	<input type="submit" class="active" value="Go" readonly>
+        </div>
+    </form>
+    </div>
+  <!-- Open Scren Login Form Ends -->
+  </div>
+</div>
+<!-- wrapper ends -->
+<!-- SET: SCRIPTS -->
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+ $(document).ready(function() {
+
+$('.login').click(function(e){  
+e.stopPropagation();
+$("#login_form").slideToggle();
+});
+$('#login_form').click(function(e){
+e.stopPropagation(); 
+});
+$(document).click(function(){
+$("#login_form").slideUp();
+
+});	
+
+
+$('#register').click(function(e){  
+e.stopPropagation();
+$("#create_form").slideToggle();
+});
+$('#create_form').click(function(e){
+e.stopPropagation(); 
+});
+$(document).click(function(){
+$("#create_form").slideUp();
+
+});	
+
+        });
+	</script>
+<!-- END: SCRIPTS -->
+</body>
+</html>
